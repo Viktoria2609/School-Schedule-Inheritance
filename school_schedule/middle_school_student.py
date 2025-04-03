@@ -2,7 +2,7 @@ from .student import Student
 
 # add MiddleSchoolStudent here
 class MiddleSchoolStudent(Student):
-    def __init__(self, name, grade, classes, gets_transportation=False, clubs=None):
+    def __init__(self, name, grade, classes, gets_transportation = False, clubs = None):
         super().__init__(name, grade, classes)
         self.gets_transportation = gets_transportation
         self.clubs = clubs if clubs is not None else []
